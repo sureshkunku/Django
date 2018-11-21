@@ -1,0 +1,181 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<spring:url value="/resources/acadamicProjects/" var="varctx" />
+
+<style>
+.iconl {
+	
+    color: #3BB9FF;
+    font-size: 150px;
+}
+#accgrp a {
+background-color: #666;
+font-family: serif;
+font-weight:bold;
+color: #fff;
+
+}
+
+#accgrp span{
+
+font-color:#fff; 
+}
+
+
+
+</style>
+<script>
+$('documnet').ready(function (){
+	var listHeight = $('#idlist').height() ;
+	var ctx =  "${varctx}";
+	//alert(ctx);
+	$('#idframe').height(listHeight-56);
+	$('#idbottom').height($('#idcol3').height() - $('#idlist').height());
+	$('#accgrp > a').click(function(e){
+	    e.stopPropagation(); 
+	    $('#idobj').attr("data",ctx+$(this).text()+".pdf");
+	    $('#idifrm').attr("src",ctx+$(this).text()+".pdf");
+	    $('#idfrma').attr("href",ctx+$(this).text()+".pdf");
+	    //alert(ctx+$(this).text()+".pdf");
+	});
+	
+});
+
+</script>
+
+<div class="container-fluid" style="z-index: 999">
+<div class="row-fluid">
+<div class="col-md-12" style="height: 50px"></div>
+</div>
+<div class="row">
+<div class="col-md-3 "  style="background-color : #000" id="idcol3">
+<div class="row">
+<div class="col-md-12 text-center" style="font-color: #000000; background-color: #3BB9FF;"><h3 >Project  List</h3></div>
+</div>
+<div class="row">
+<div class="col-md-12"  style="font-color: #ffffff; background-color: #3BB9FF;" id ="idlist">
+<div class="list-group" id ="accgrp">
+<a href="#" class="list-group-item list-group-item-action"  ><span>
+1.SOFTWARE PROJECT MANAGEMENT TOOL</span></a>
+<a href="#" class="list-group-item list-group-item-action">
+2.Speed Age</a>
+<a href="#" class="list-group-item list-group-item-action">
+3.PayRoll  Acounting System</a>
+<a href="#" class="list-group-item list-group-item-action">
+4.Online Vehicle Scheduling System</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+5.Privacy Preserving Delegated Access Control in Public Clouds
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+6.Dynamic Resource Allocation using Virtual Machines for Cloud Computing Environment</a>
+<a href="#" class="list-group-item list-group-item-action">
+7.Enabling Data Dynamic and Indirect Mutual Trust for Cloud Computing Storage Systems
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+8.Load Rebalancing for Distributed File Systems in Clouds
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+9.The vehicle dealership management system
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+10.Centralized Sales and Inventory Management </a>
+<a href="#" class="list-group-item list-group-item-action">
+11.Automated Ballet Voting System</a>
+<a href="#" class="list-group-item list-group-item-action">
+12.Network security project management</a>
+<a href="#" class="list-group-item list-group-item-action">
+13.A Methodology for Direct and Indirect Discrimination Prevention</a>
+<a href="#" class="list-group-item list-group-item-action">
+14.A Probabilistic Approach to String Transformation</a>
+<a href="#" class="list-group-item list-group-item-action">
+15.A System to Filter Unwanted Messages from OSN User Walls</a>
+<a href="#" class="list-group-item list-group-item-action">
+16.Survey Tool for an organization</a>
+<a href="#" class="list-group-item list-group-item-action">
+17.Warehouse Management System
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+18.inet phone</a>
+<a href="#" class="list-group-item list-group-item-action">
+19.E-Procure System</a>
+<a href="#" class="list-group-item list-group-item-action">
+20.MediTracker</a>
+<a href="#" class="list-group-item list-group-item-action">
+21.FoCUS Learning to Crawl Web Forums</a>
+<a href="#" class="list-group-item list-group-item-action">
+22.Global Online Trading System</a>
+<a href="#" class="list-group-item list-group-item-action">
+23.Clinical Inquisition</a>
+<a href="#" class="list-group-item list-group-item-action">
+24.Preventing Private Information Inference Attacks</a>
+<a href="#" class="list-group-item list-group-item-action">
+25.Secure Mining of Association Rules in Horizontally Distributed Databases</a>
+<a href="#" class="list-group-item list-group-item-action">
+26.HEALTH DISEASE AWARENESS SYSTEM</a>
+<a href="#" class="list-group-item list-group-item-action">
+27.ONLINE  SALES AND INVENTORY MANAGEMENT SYSTEM
+</a><a href="#" class="list-group-item list-group-item-action">
+28.Recrutement System</a>
+<a href="#" class="list-group-item list-group-item-action">
+29.SybilDefender Defend Against Sybil Attacks in Large</a>
+<a href="#" class="list-group-item list-group-item-action">
+30.Spatial Approximate String Search</a>
+<a href="#" class="list-group-item list-group-item-action">
+31.Circular Reranking for Visual Search</a>
+<a href="#" class="list-group-item list-group-item-action">
+32.Projects Management System</a>
+<a href="#" class="list-group-item list-group-item-action">
+33.AN INTELLIGENT NETWORK BACKUP TOOL</a>
+<a href="#" class="list-group-item list-group-item-action">
+34.Canonical Correlation</a>
+<a href="#" class="list-group-item list-group-item-action">
+35.Outsourcing Privacy-Preserving Social Networks to a Cloud
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+36.Online Order Proceesing with AJAX</a>
+<a href="#" class="list-group-item list-group-item-action">
+37.Online Library Management</a>
+<a href="#" class="list-group-item list-group-item-action">
+38.Adxpress</a>
+<a href="#" class="list-group-item list-group-item-action">
+39.Improving Security and Efficiency in Attribute-Based Data Sharing
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+40.Fast Nearest Neighbor Search with Keywords</a>
+<a href="#" class="list-group-item list-group-item-action">
+41.Facilitating Effective User Navigation through Website Structure Improvement</a>
+<a href="#" class="list-group-item list-group-item-action">
+42.E-Secured based transactions
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+43.Recruting policies Managing System</a>
+<a href="#" class="list-group-item list-group-item-action">
+44.Tax Calculating Resources
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+45.Crowdsourcing Predictors of Behavioral Outcomes</a>
+<a href="#" class="list-group-item list-group-item-action">
+46.BankSystem
+</a>
+<a href="#" class="list-group-item list-group-item-action">
+47.Analysis and design of an agent</a>
+
+</div> </div>
+</div> </div>
+<div class="col-md-9" style="background-color: #3BB9FF;">
+<div class="row">
+<div class="col-md-12 text-center"  style="background-color: #3BB9FF">
+<h3>Abstract</h3>
+</div>
+<div class="col-md-12 " style="height:1160px;  background-color: #3BB9FF;"  id ="idframe">
+<object data="${varctx}1.SOFTWARE PROJECT MANAGEMENT TOOL.pdf" type="application/pdf" id ="idobj" width="100%" height="100%"  style="background-color: #fff;">
+<iframe src="${varctx}1.SOFTWARE PROJECT MANAGEMENT TOOL.pdf" id ="idifrm" width="100%" height="100%" style="border: none;background-color: #fff;">
+This browser does not support PDFs. Please download the PDF to view it: <a href="${varctx}1.SOFTWARE PROJECT MANAGEMENT TOOL.pdf" id="idfrma">Download PDF</a>
+</iframe>
+</object>
+</div>
+<div class="col-md-12 " style="background-color: #3BB9FF;" id ="idbottom">  </div>
+</div>
+</div>
+</div>
+</div>

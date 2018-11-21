@@ -1,0 +1,175 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<div class="container-fluid">
+ 
+<div  class="row" > <div class=" col-md-12"  style="background-color: #3BB9FF; height:55px"> </div>
+<div class="panel ">
+<div class="panel-headder text-center" style="background:#000;color:#fff;font-size:20px">
+
+<span><b>${courseName}</b></span>
+</div>
+<div class="panel-boody">
+<div class="row" style="padding:10px"> 
+<div class="col-md-6">
+<div class="panel panel-default text-left"  style="color:#000;font-weight: bold;">
+<p><br/></p>
+<p style="padding-left :10px" > Course Name: ${courseName} </p>
+<p style="padding-left:10px" > Duration: ${duration} </p>
+<p style="padding-left:10px" >Mode: ${mode} </p>
+</div>
+</div>
+<div class="col-md-6"> </div>
+</div>
+<div class="row">
+ <div class="col-md-12 text-center" style="background:#3BB9FF; color:#000"><b> Course Content</b></div>
+<spring:url value="/resources/images/java_sider.jpg" var="javaSider" />
+<spring:url value="/resources/images/hadoopSider.png" var="hadoopSider" />
+<spring:url value="/resources/images/salesforceSider.png" var="salesforceSider" />
+<spring:url value="/resources/images/oracleSider.png" var="oracleSider" />
+<spring:url value="/resources/images/webdesigningSider.png" var="webdesigningSider" /> 
+<spring:url value="/resources/images/unixSider.png" var="unixSider" /> 
+<spring:url value="/course/gotoJava" var="gotojava" /> 
+<spring:url value="/course/gotoHadoop" var="gotoHadoop" /> 
+<spring:url value="/course/gotoSF" var="gotoSF" /> 
+<spring:url value="/course/gotoOracle" var="gotoOracle" /> 
+<spring:url value="/course/gotoWeb" var="gotoWeb" /> 
+<spring:url value="/course/gotoUnix" var="gotoUnix" /> 
+</div>
+<div class="row-fluid">
+<div  class="col-md-3">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container ">
+            
+              <div class="list-group">
+                <a href="${gotojava}" class="list-group-item  text-center;" id="1">
+                 <img alt="core Java" src="${javaSider}" class="img-rounded "  style="width: 100%;height:130px;">
+                </a>
+                <a href="${gotoHadoop}" class="list-group-item text-center;" name="2" id="2" >
+               <img alt="core Java" src="${hadoopSider}" class="img-rounded "  style="width: 100%;height: 130px;">
+                </a>
+                <a href="${gotoSF}" class="list-group-item text-center;" name="3" id="3">
+             <img alt="core Java" src="${salesforceSider}" class="img-rounded "  style="width: 100%;height: 130px;">
+                </a>
+                <a href="${gotoOracle}" class="list-group-item text-center;" id="4">
+                 <img alt="core Java" src="${oracleSider}" class="img-rounded "  style="width: 100%;height: 130px;">   
+                </a>
+                <a href="${gotoWeb}" class="list-group-item text-center;" id="5">
+               <img alt="core Java" src="${webdesigningSider}" class="img-rounded "  style="width: 100%;height: 130px;"> 
+                </a>
+				<a href="${gotoUnix}" class="list-group-item text-center;" id= "6">
+                <img alt="core Java" src="${unixSider}" class="img-rounded "  style="width: 100%;height: 130px;">
+                </a>
+				
+              </div>
+            </div>
+</div>
+
+<div class="col-md-9 text-center" style="height:1160px; padding-top: 20px">
+
+<spring:url value="/resources/pdfs/Core_java.pdf" var="javapdf" />
+
+   
+
+<object data="${pdffile}" type="application/pdf" width="100%" height="100%"  style="background-color: #fff;">
+<iframe src="${pdffile}" width="100%" height="100%" style="border: none;background-color: #fff;">
+This browser does not support PDFs. Please download the PDF to view it: <a href="${pdffile}">Download PDF</a>
+</iframe>
+</object>
+</div>
+
+</div>
+
+<div class="row-fluid">
+
+<div class="col-md-12 text-center" style="background:#3BB9FF; color:#000"><b>**********</b></div>
+</div>
+</div>
+</div>
+<div >
+</div>
+</div>
+ </div>
+ <style>
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+ /*  border:1px solid #ddd; */
+  margin-top: 20px;
+  margin-left: 01px;
+/*  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175); */
+ /* box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #3BB9FF;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #3BB9FF;
+  background-image: #3BB9FF;
+  color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #3BB9FF;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+
+.s-logo-m {
+ color: #3BB9FF;
+    font-size: 100px;
+}
+body {
+    color: black;
+}
+.s-logo-mm {
+ color: #3BB9FF;
+    font-size: 40px;
+}
+
+</style>
+ 

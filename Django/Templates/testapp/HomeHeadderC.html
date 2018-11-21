@@ -1,0 +1,44 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<spring:url value="/resources/css/header.css" var="headerCss" />
+
+    <link href="${headerCss}" rel="stylesheet">
+<spring:url value="/contact" var="contact"></spring:url>
+<spring:url value="/sendForm" var="sendForm"></spring:url>
+<spring:url value="/index" var="home"></spring:url>
+<spring:url value="/aboutus" var="about"></spring:url>
+<spring:url value="/service" var="service"></spring:url>
+<spring:url value="/cources" var="cources"></spring:url>
+<spring:url value="/academicprojects" var="academicprojects"></spring:url>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="${home}">NEXTGEN4IT</a>
+    </div>
+	
+	<div class="navbar-header" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	
+	<a href="https://www.facebook.com/pg/NextGen4IT-391568531218098/posts/?ref=page_internal" target="_blank" class="  fa  fa-facebook  fa-la  " id ="a1"></a>
+	</div>
+	<div class="navbar-header" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	<a href="https://www.youtube.com/channel/UCrByBJIUyxyxTy2SWoYcMPQ"  target="_blank" class="fa fa-youtube fa-la " id ="a2"></a>
+	</div>
+		<div class="navbar-header" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	<a href="https://plus.google.com/u/0/100284024890629301878"  target="_blank" class="fa fa-google-plus fa-la  " id ="a3"></a>
+	</div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="${about}">ABOUT</a></li>
+        <li><a href="${service}">SERVICES</a></li>
+        <li><a href="${cources}">COURSES</a></li>
+        <li><a href="${academicprojects}">ACADEMIC PROJECTS</a></li>
+        <li><a href="${contact}">CONTACT</a></li>
+        <li><a href="https://sureshkunkutech.blogspot.in/" target="_blank">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Programs</title>
+    <link rel="stylesheet" href="{%static 'CSS/static1.css' %}">
+</head>
+<body>
+<h1>Employee Information</h1>
+<p>Name : {{Name}}</p>
+<p>date and time is : {{date}}</p>
+<img src="{%static 'images/Test.jpg'%}" alt="suresh" width="100" height="100">
+
+{% if emp %}
+<table border="2px">
+    <thead>
+        <th>Employee No</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+        <th>Employee Address</th>
+    </thead>
+{% for i in emp %}
+    <tr>
+        <td>{{i.E_NO}}</td>
+        <td>{{i.E_NAME}}</td>
+        <td>{{i.E_SAL}}</td>
+        <td>{{i.E_ADDRESS}}</td>
+    </tr>
+{%endfor%}
+</table>
+{%else%}
+<p>Employee table don't have records</p>
+{%endif%}
+</body>
+</html>
